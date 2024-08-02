@@ -11,6 +11,21 @@
   },
   "dependencies": {
     "nuxt": "^3.12.4",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-router": "^4.4.2",
+    "@nuxt/devtools": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "@nuxt/ui": "^2.14.2",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/core": "^10.7.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "pinia": "^2.1.7",
+    "uuid": "^9.0.1",
+    "vue-color": "^2.8.1",
+    "vue-toastification": "^2.0.0-rc.5"
   }
 }
