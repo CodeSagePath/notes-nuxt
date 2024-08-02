@@ -1,0 +1,87 @@
+.board {
+  @media screen {
+  flex flex-row items-start
+  }
+}
+
+.board-wrapper {
+  @apply p-4 h-full overflow-auto;
+}
+
+.column {
+  @apply flex-1 p-4 mr-4 rounded bg-gray-200;
+  min-width: 350px;
+}
+
+.column-header {
+  @apply flex items-center justify-between mb-3 font-bold;
+}
+
+.task-bg {
+  @apply absolute inset-0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.task-view {
+  @apply flex flex-col flex-grow items-start justify-between px-4;
+}
+
+.task-wrapper {
+  @apply max-w-2xl bg-gray-200 m-32 mx-auto py-4 rounded;
+}
+
+
+/* Applying styles for screen sizes */
+@media (min-width: 640px) { /* Example for sm screens and up */
+  .board {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.board-wrapper {
+  padding: 1rem; /* Tailwind's p-4 */
+  height: 100%; /* Full height */
+  overflow: auto;
+}
+
+.column {
+  flex: 1;
+  padding: 1rem; /* Tailwind's p-4 */
+  margin-right: 1rem; /* Tailwind's mr-4 */
+  border-radius: 0.25rem; /* Tailwind's rounded */
+  background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+  min-width: 350px;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem; /* Tailwind's mb-3 */
+  font-weight: bold;
+}
+
+.task-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.task-view {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem; /* Tailwind's px-4 */
+}
+
+.task-wrapper {
+  max-width: 42rem; /* Tailwind's max-w-2xl */
+  background-color: #e5e7eb; /* Tailwind's bg-gray-200 */
+  margin: 8rem auto; /* Tailwind's m-32 mx-auto */
+  padding: 1rem; /* Tailwind's py-4 */
+  border-radius: 0.25rem; /* Tailwind's rounded */
+}
