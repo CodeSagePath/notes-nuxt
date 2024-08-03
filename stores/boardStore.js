@@ -10,7 +10,7 @@ export const useBoardStore = defineStore('boardStore', () => {
    * Tasks
    */
   const getTask = computed(() => {
-    return (taskId: string) => {
+    return (taskId) => {
       for (const column of board.value.columns) {
         const task = column.tasks.find(task => task.id === taskId)
         if (task) return task
@@ -18,7 +18,7 @@ export const useBoardStore = defineStore('boardStore', () => {
     }
   })
 
-  function addTask({ columnIndex, taskName } : {columnIndex: any, taskName: any}) {
+  function addTask({ columnIndex, taskName }) {
     board.value.columns[columnIndex].tasks.push({
       id: uuid(),
       name: taskName,
@@ -26,7 +26,7 @@ export const useBoardStore = defineStore('boardStore', () => {
     })
   }
 
-  function deleteTask(taskId: string) {
+  function deleteTask(taskId) {
     for (const column of board.value.columns) {
       const taskIndex = column.tasks.findIndex(task => task.id === taskId)
 
@@ -42,10 +42,7 @@ export const useBoardStore = defineStore('boardStore', () => {
     toTaskIndex,
     fromColumnIndex,
     toColumnIndex
-  } : {fromTaskIndex: any, 
-    toTaskIndex: any, 
-    fromColumnIndex: any, 
-    toColumnIndex: any}) {
+  }) {
     const task = board.value.columns[fromColumnIndex].tasks.splice(
       fromTaskIndex,
       1
@@ -57,7 +54,7 @@ export const useBoardStore = defineStore('boardStore', () => {
   /**
    * Columns
    */
-  function addColumn(columnName: any) {
+  function addColumn(columnName) {
     board.value.columns.push({
       name: columnName,
       tasks: [],
@@ -65,11 +62,11 @@ export const useBoardStore = defineStore('boardStore', () => {
     })
   }
 
-  function deleteColumn(columnIndex: number) {
+  function deleteColumn(columnIndex) {
     board.value.columns.splice(columnIndex, 1)
   }
 
-  function moveColumn({ fromColumnIndex, toColumnIndex } : {fromColumnIndex: any, toColumnIndex: any}) {
+  function moveColumn({ fromColumnIndex, toColumnIndex }) {
     const column = board.value.columns.splice(fromColumnIndex, 1)[0]
     board.value.columns.splice(toColumnIndex, 0, column)
   }
