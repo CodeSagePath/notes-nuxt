@@ -1,6 +1,7 @@
 <script setup>
 import { useBoardStore } from '~/stores/boardStore'
 import { computed, ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 const props = defineProps({
   column: {
@@ -137,7 +138,7 @@ const taskCount = computed(() => props.column.tasks.length)
     <UInput
       v-model="newTaskNameInput"
       type="text"
-      placeholder="New"
+      placeholder="New Task"
       icon="i-heroicons-plus-circle-solid"
       @keyup.enter="addNewTask"
     />

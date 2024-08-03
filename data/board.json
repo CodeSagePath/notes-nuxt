@@ -7,13 +7,23 @@
       "tasks": [
         {
           "id": "0335e09e-c472-4d25-a2a4-2673510c379b",
-          "name": "task #1",
-          "description": ""
+          "name": "Research AR frameworks",
+          "description": "Investigate suitable frameworks and tools for developing an AR game."
         },
         {
           "id": "8a928845-26d0-4462-8ae6-bb7a4b7dc294",
-          "name": "task #2",
-          "description": ""
+          "name": "Set up Spring Boot project",
+          "description": "Initialize a new Spring Boot project with MariaDB and Java 17."
+        },
+        {
+          "id": "9b817843-45f0-453d-9ed3-8e7a1f709dbd",
+          "name": "Update database schema",
+          "description": "Modify the ResumeEntity class to split the 'name' field into 'first_name' and 'last_name'."
+        },
+        {
+          "id": "ad217b67-d953-4e50-8c73-c8a1e024dddf",
+          "name": "Deploy React app with Argo CD",
+          "description": "Learn how to deploy and access the React application online using Argo CD."
         }
       ]
     },
@@ -23,24 +33,49 @@
       "tasks": [
         {
           "id": "69a1120e-f5e5-437d-9319-f410610a49c8",
-          "name": "task #3",
-          "description": ""
+          "name": "Install KDE on Manjaro",
+          "description": "Set up the KDE desktop environment on Manjaro Linux."
+        },
+        {
+          "id": "3bdf3c6d-8fcd-4f12-8b3d-64611c2a9172",
+          "name": "Fix Flutter localization",
+          "description": "Resolve issues with .arb files and undefined getters in the Flutter project."
+        },
+        {
+          "id": "5e09e76a-6d6b-45b9-8b7a-3210c709f1ab",
+          "name": "Build Vue.js project",
+          "description": "Create a new Vue.js project with Tailwind CSS and necessary dependencies."
+        },
+        {
+          "id": "b8c3c0cd-9ec3-4d85-8d9a-80b1e7e2fdc7",
+          "name": "Use Yarn for Vue.js",
+          "description": "Set up the Vue.js project using Yarn package manager."
+        },
+        {
+          "id": "fc0c5b75-ecbb-45ef-8973-d1e4c0aef1b5",
+          "name": "Integrate Material Design",
+          "description": "Implement Material Design 3 in the Vue.js project."
+        },
+        {
+          "id": "a372594b-8b65-4e60-b76e-1c93d95b5f7b",
+          "name": "Configure Nuxt 3",
+          "description": "Set up Nuxt 3 with TypeScript for the project configuration."
         }
       ]
     },
     {
       "id": "f1953dbe-b295-48bf-af0c-312d1eaa1c04",
-      "name": "complete",
+      "name": "completed",
       "tasks": [
         {
           "id": "6e7ed610-e788-4640-a55c-c96088f4d0d6",
-          "name": "task #4",
-          "description": "Hello World!!"
+          "name": "Implement user registration",
+          "description": "Successfully implemented user registration and login using Strapi."
         },
         {
           "id": "e3ea69ba-9a4f-4164-af74-78b3cfcf8630",
-          "name": "task #5",
-          "description": ""
+          "name": "Set up message endpoint",
+          "description": "Successfully set up the message creation endpoint for the real-time chat application."
         }
       ]
     }
